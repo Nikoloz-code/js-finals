@@ -74,7 +74,7 @@ app.get("/", (req, res) => {
 })
 ```
 - `res.render(view);` ერთ-ერთ ჩვენ **_view_**-ს გადააქცევს ***HTML String***-ად კლიენტისთვის. ***აუცილებელია, რომ ფუნქციაში მოცემული view იყოს string, რომელიცაა view ფაილამდე მისაღწევი გზა. შეიძლება იყოს აბსოლუტური გზა (absolute path), ან  და თუ გაქვთ გამოყენებული `app.set('views')`, მის გზის მიხედვით მოცემული გზა (relative path).**
-- `res.render(view, [,locals]); -> locals` არის ობიექტი რომლის მონაცემები წარმოადგენს view-ს ცვლადებს. თუ ვიყენებთ [HBS](HBS.md)-ს, ცვლადების გამოყენების მაგილითი შეგვიძლია ვნახოთ [აქ](HBS.md##Using%20Data).
+- `res.render(view, [,locals]); -> locals` არის ობიექტი რომლის მონაცემები წარმოადგენს view-ს ცვლადებს. თუ ვიყენებთ [HBS](HBS.md)-ს, ცვლადების გამოყენების მაგილითი შეგვიძლია ვნახოთ [აქ](https://github.com/Nikoloz-code/js-finals/blob/main/HBS.md#using-data).
 ### URL Parameters
 ```javascript
 app.get("/:id", (req, res) => {
