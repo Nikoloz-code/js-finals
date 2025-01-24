@@ -14,17 +14,17 @@ yargs.command({
 		// tbilisi — if only one argument
 		const nameList = argv.names.split(',')
 		if (nameList.length > 1){
-            // bevri qalaqi
-	        weather.getWeatherList(nameList)
-        }
-        else if (nameList.length === 1){
-            // erti qalaqi
-            weather.getWeather(nameList[0])
-        }
-        else {
-            //error
-            console.log(chalk.red("No city name provided"))
-        }
+			// bevri qalaqi
+			weather.getWeatherList(nameList)
+	        }
+	        else if (nameList.length === 1){
+	            // erti qalaqi
+	            weather.getWeather(nameList[0])
+	        }
+	        else {
+	            //error
+	            console.log(chalk.red("No city name provided"))
+	        }
 	}
 });
 ```
