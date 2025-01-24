@@ -4,7 +4,9 @@ hbs.registerPartials(path.join(__dirname, "./views/partials"))
 ```
 - თუ ჩვენ `.hbs` დოკუმენტში გვაქ რაიმე სექცია რომელიც გვინდა გამოვიყენოთ რამოდენიმე დოკუმენტში, მას გადავაქცევთ როგორც `Partials`, რომელიც არის უბრალოდ 
 - `hbs.registerPartials` გვაძლევს საშუალებას რომ მივუთითოთ `HBS` მოდულს თუ სად მდებარეობს ჩვენი `Partials` დოკუმენტები:
+
   `views/ `
+  
   `├─── partials/ `
 ## Using Data
 ```html
@@ -32,7 +34,7 @@ hbs.registerPartials(path.join(__dirname, "./views/partials"))
 </html>
 ```
 - `{{> header}}` მიუთითებს `header.hbs` `Partials` ფაილზე. 
-- `{{#each data}}` იწყებს `foreach` ციკლს `data`-ში, რომელსაც იღებს [ExpressJS](ExpressJS###Sending%20Data%20To%20A%20View)-იდან. `{{/each}}` არის ციკლის დამთავრება.
+- `{{#each data}}` იწყებს `foreach` ციკლს `data`-ში, რომელსაც იღებს [ExpressJS](https://github.com/Nikoloz-code/js-finals/blob/main/ExpressJS.md#sending-data-to-a-view)-იდან. `{{/each}}` არის ციკლის დამთავრება.
 - `{{> blogCard title=this.title blog=this.blog created=this.created updated=this.updated}}` ასევე არის `Partials`, რომელსაც გააჩნია თავისი ლოკალური ცვლადები.
 **ეს არის blogCard .hbs დოკუმენტი:**
 ```html
