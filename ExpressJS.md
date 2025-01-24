@@ -12,36 +12,28 @@ app.set('view engine', 'hbs');
 app.set('view', path.join(__dirname, './views'));
 ```
 - `app.use(express.static('public'));` გვაძლევს საშუალებას რომ გამოივიყენოთ სტატიკური ფაილები, როგორიცაა: *სურათები*, *CSS* და *JavaScript ფაილები*:
-  
-  `public/`
-  
-  `├─ css/ `
-  
-  `├─ js/ `
-  
+  ```
+  public/
+  ├─ css/
+  ├─ js/
+  ```
 - `app.set('view engine', 'hbs');` გვაძლევს საშუალებას, რომ შევცვალოთ *view engine* ვებსაიტის რენდერინგისთვის.
 - `app.set('views', path.join(__dirname, './views'));` აპლიკაციას ვაწვდით ჩვენ ვებ-გვერდებს. *directory*-ს სახელი უნდა იყოს `views`:
-
-  `views/ `
-   
-  `├─ partials/ `
-  
+  ```
+  views/ 
+  ├─ partials/
+  ```
 - `path.join()` და `__dirname` არის შესაძლებელი მარტო `path` მოდულით, რომელიც მოყვება `NodeJS`-ს. იგი არ არის `ExpressJS`-ის მოდულის ნაწილი.
 ### Project Structure
 ჩვენი საბოლოო პროექტის სტრუქტურა უნდა იყოს შემდეგნაირი:
-  
-`public/` 
-
-`├─── css/ `
-
-`├─── js/ `
-
-`views/ `
-
-`├─── partials/ `
-
-`app.js`
-  
+```
+public/ 
+├─── css/ 
+├─── js/ 
+views/ 
+├─── partials/
+app.js
+```  
 `Partials`-ის შესახებ შეგიძლიათ წაიკითხოთ [ამ ბმულზე](https://github.com/Nikoloz-code/js-finals/blob/main/HBS.md#partials).
 ```javascript
 app.use(express.urlencoded())
