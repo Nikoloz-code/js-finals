@@ -4,10 +4,10 @@ hbs.registerPartials(path.join(__dirname, "./views/partials"))
 ```
 - თუ ჩვენ `.hbs` დოკუმენტში გვაქ რაიმე სექცია რომელიც გვინდა გამოვიყენოთ რამოდენიმე დოკუმენტში, მას გადავაქცევთ როგორც `Partials`, რომელიც არის უბრალოდ 
 - `hbs.registerPartials` გვაძლევს საშუალებას რომ მივუთითოთ `HBS` მოდულს თუ სად მდებარეობს ჩვენი `Partials` დოკუმენტები:
-
-  `views/ `
-  
-  `├─── partials/ `
+  ```
+  views/
+  ├─── partials/
+  ```
 ## Using Data
 ```html
 <!DOCTYPE html>
