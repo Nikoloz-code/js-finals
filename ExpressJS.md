@@ -13,7 +13,7 @@ app.set('view', path.join(__dirname, './views'));
 ```
 - `app.use(express.static('public'));` გვაძლევს საშუალებას რომ გამოივიყენოთ სტატიკური ფაილები, როგორიცაა: *სურათები*, *CSS* და *JavaScript ფაილები*:
   
-  `public/` 
+  `public/`
   `├─ css/ `
   `├─ js/ `
   
