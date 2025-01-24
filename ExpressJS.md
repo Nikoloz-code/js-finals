@@ -21,8 +21,11 @@ app.set('view', path.join(__dirname, './views'));
   
 - `app.set('view engine', 'hbs');` გვაძლევს საშუალებას, რომ შევცვალოთ *view engine* ვებსაიტის რენდერინგისთვის.
 - `app.set('views', path.join(__dirname, './views'));` აპლიკაციას ვაწვდით ჩვენ ვებ-გვერდებს. *directory*-ს სახელი უნდა იყოს `views`:
-  `views/ ` 
+
+  `views/ `
+   
   `├─ partials/ `
+  
 - `path.join()` და `__dirname` არის შესაძლებელი მარტო `path` მოდულით, რომელიც მოყვება `NodeJS`-ს. იგი არ არის `ExpressJS`-ის მოდულის ნაწილი.
 ### Project Structure
 ჩვენი საბოლოო პროექტის სტრუქტურა უნდა იყოს შემდეგნაირი:
