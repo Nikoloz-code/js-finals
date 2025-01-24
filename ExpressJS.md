@@ -39,7 +39,7 @@ app.set('view', path.join(__dirname, './views'));
 
 `app.js`
   
-`Partials`-ის შესახებ შეგიძლიათ წაიკითხოთ [ამ ბმულზე](HBS.md##Partials).
+`Partials`-ის შესახებ შეგიძლიათ წაიკითხოთ [ამ ბმულზე](https://github.com/Nikoloz-code/js-finals/blob/main/HBS.md#partials).
 ```javascript
 app.use(express.urlencoded())
 app.use(express.json())
@@ -74,7 +74,7 @@ app.get("/", (req, res) => {
 })
 ```
 - `res.render(view);` ერთ-ერთ ჩვენ **_view_**-ს გადააქცევს ***HTML String***-ად კლიენტისთვის. ***აუცილებელია, რომ ფუნქციაში მოცემული view იყოს string, რომელიცაა view ფაილამდე მისაღწევი გზა. შეიძლება იყოს აბსოლუტური გზა (absolute path), ან  და თუ გაქვთ გამოყენებული `app.set('views')`, მის გზის მიხედვით მოცემული გზა (relative path).**
-- `res.render(view, [,locals]); -> locals` არის ობიექტი რომლის მონაცემები წარმოადგენს view-ს ცვლადებს. თუ ვიყენებთ [HBS](HBS.md)-ს, ცვლადების გამოყენების მაგილითი შეგვიძლია ვნახოთ [აქ](https://github.com/Nikoloz-code/js-finals/blob/main/HBS.md#using-data).
+- `res.render(view, [,locals]); -> locals` არის ობიექტი რომლის მონაცემები წარმოადგენს view-ს ცვლადებს. თუ ვიყენებთ [HBS](https://github.com/Nikoloz-code/js-finals/blob/main/HBS.md)-ს, ცვლადების გამოყენების მაგილითი შეგვიძლია ვნახოთ [აქ](https://github.com/Nikoloz-code/js-finals/blob/main/HBS.md#using-data).
 ### URL Parameters
 ```javascript
 app.get("/:id", (req, res) => {
@@ -100,7 +100,7 @@ app.get('/my-api', (req, res) => {
     });
 })
 ```
-- `api.fetchAllJokes().then( () => {} ).catch( () => {} )` არის [Axios](Axios.md)-ის HTTP Request-ების დამამუშავებელი მოდული. იგი არ არის `ExpressJS`-ის ნაწილი.
+- `api.fetchAllJokes().then( () => {} ).catch( () => {} )` არის [Axios](https://github.com/Nikoloz-code/js-finals/blob/main/Axios.md)-ის HTTP Request-ების დამამუშავებელი მოდული. იგი არ არის `ExpressJS`-ის ნაწილი.
 - რომ გადავიდეთ `http:localhost:PORT/my-api`-ზე, ჩვენ მივიღებთ `JSON` ინფორმაციას, რასაც `Axios` მოგვაწვდის და ვაგზავნით `res.json()`-ის საშუალებით.
 ### Star-Route
 ```javascript
@@ -131,7 +131,7 @@ app.post('/blog', (req, res) => {
 - `req.body` დააბრუნებს ინფორმაციას, რაც იგზავნება `POST` მეთოდით.
 - `unshift()` ფუნქცია ამატებს ინფორმაციას დოკუმენტის დაწყებაში.
 - `res.redirect()` ფუნქციას გადავყავართ სხვა რაუტზე.
-`app.post('/blog')` არის გააქტიურებული როდესაც ვებსაიტი გზავნის `POST Request`-ს სპეციფიკურად `/blog` რუტზე, როგორც მაგალითად ეს [.hbs](HBS.md) დოკუმენტი:
+`app.post('/blog')` არის გააქტიურებული როდესაც ვებსაიტი გზავნის `POST Request`-ს სპეციფიკურად `/blog` რუტზე, როგორც მაგალითად ეს [.hbs](https://github.com/Nikoloz-code/js-finals/blob/main/HBS.md) დოკუმენტი:
 ```html
     <main>
         <form action="/blog" method="post" enctype="application/json">
